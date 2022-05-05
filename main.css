@@ -8,6 +8,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: sticky; /*шапка прилиплп к верху страницы*/
+    background-color: #fff;
+    top:0;
+    z-index: 1;/*выше остальных элементов*/
 }
 .header__logo {
     height: 30px;
@@ -78,7 +82,6 @@ button {
     text-align: center;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
 }
 
 .form h1 {
@@ -101,13 +104,13 @@ text-align: left;
  .form label {
      font-size:18px;
      font-weight: 600;
-     margin-bottom: 15px;
+     margin-bottom: 20px;
  }
  .form input, .form select {
     font-size:18px;
     color:#213053;
     height: 60px;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     border-radius: 15px;
     border: none;
 }
@@ -156,4 +159,16 @@ footer {
 }
 .footer__links a {
     margin-bottom: 15px;
+}
+@keyframes rotation {
+ 0% {
+     transform: rotate(0);
+ }
+ 100% {
+    transform: rotate(360deg);
+ }
+}
+.about__sun-image {
+    animation: rotation 10s infinite linear;
+    position: absolute;
 }
