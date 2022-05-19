@@ -1,6 +1,6 @@
 body {
    font-family: 'Raleway', sans-serif;
-   color: #213053; 
+   color: #213053;
    margin: 0;
 }
 header {
@@ -92,8 +92,8 @@ button {
     opacity: 0.65;
 }
 .form__group {
-display: flex; 
-flex-direction: column; /*по умолч row-главная ось горизонталь, а элем распол. в строку, column-элем.размещ.вертикально и гл.ось станет вертик-й*/ 
+display: flex;
+flex-direction: column; /*по умолч row-главная ось горизонталь, а элем распол. в строку, column-элем.размещ.вертикально и гл.ось станет вертик-й*/
 text-align: left;
 }
 .form form {
@@ -143,7 +143,7 @@ footer {
 }
 .footer__container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 .footer__group {
     margin-right: 80px;
@@ -171,4 +171,134 @@ footer {
 .about__sun-image {
     animation: rotation 10s infinite linear;
     position: absolute;
+}
+.features {
+  background-color: white;
+  padding: 90px 60px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:50px; 
+}
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+}
+.card__p {
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+.card__logo {
+ width: 100px;
+ height: 100px;
+ font-size: 32px;
+ font-weight: 700;
+ border-radius: 50%;
+ background-color: #eaeff9;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.fa-solar-panel {
+    color: #ffb406;
+}
+.card__logo_p {
+    color: #ad1714;
+}
+.fa-chart-line {
+color: #22a030;
+}
+.features__border {
+    margin: 50px 0 50px 0;
+    border: 1px solid #E6EAF4;
+}
+.features__feedback {
+    display: flex;
+}
+.features__feedback-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features__feedback-left {
+    margin-right: 10px;
+}
+.feedback-left_h {
+    font-size: 48px;
+}
+.feedback-left_p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.features__box {
+    padding: 30px 40px 25px 40px;
+    color: #fff;
+    border-radius: 25px;
+}
+.feedback-right_h {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.features__savings-box {
+    background-color: #dc5e26;
+    box-shadow:0px 6px 0 rgba(221 95 38/20%);
+    margin-right: 30px;
+}
+.features__rate-box {
+ background-color: #1D263A;
+ box-shadow:0px 6px 0 rgba(29 38 58/20%);
+}
+.fa-star {
+    color: #ff7039;
+}
+.promo {
+    display: flex;
+}
+.promo__image {
+    background: url('img/promo.jpg') no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    flex-shrink: 0;
+    width: 50%;
+}
+.promo__right {
+    background-color: #dd5f26;
+    width: 50%;
+    padding: 160px 60px;
+}
+.promo_card {
+    background-color: white;
+    padding: 30px 40px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+.promo_card_p {
+    opacity: 0.8;
+}
+.fa-circle {
+    color:  #ec6b29;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.promo_button {
+ background: #107b1c;
+ margin-top: 20px;
+ font-size: 18px;
+ font-weight: 600;
+ padding: 15px 30px;
+}
+.fa-chevron-right {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.promo__card_button {
+    display: flex;
+    justify-content: center;
 }

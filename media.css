@@ -14,6 +14,38 @@
         width: 75px;
         height: 75px;
     }
+    .features {
+      background-color: white;
+      padding: 50px 10px;
+    }
+    .cards {
+      grid-template-columns: auto;
+    }
+    .features__feedback {
+        display: flex;
+        flex-direction: column;
+    }
+    .features__feedback-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .features__feedback-left {
+        margin-right: 0;
+    }
+    .feedback-left_h {
+        font-size: 36px;
+    }
+    .feedback-right_h {
+        font-size: 36px;
+    }
+    .features__savings-box {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .promo__right {
+        padding: 50px 10px;
+    }
+   
 }
 
 @media (max-width:720px) {
@@ -53,5 +85,5 @@
     .footer__container {
         flex-direction: column;
     }
-    
+
 }
